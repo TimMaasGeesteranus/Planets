@@ -1,20 +1,19 @@
 import React from 'react';
-import type { Node } from 'react';
+
 import {
   View,
-  Text
+  Text,
+  ImageBackground,
+  StyleSheet
 } from 'react-native';
+import StartScreen from './components/screens/StartScreen.js';
 
-const App: () => Node = () => {
+const image = require('./public/stars.gif')
+
+const App = () => {
 
   return (
-    <View>
-
-      <Text>Hello World!</Text>
-
-
-
-    </View>
+    <StartScreen />
   );
 };
 
