@@ -5,6 +5,7 @@ import {
     ImageBackground,
     StyleSheet
 } from 'react-native';
+import MyAppText from '../MyAppText';
 
 const image = require('../../public/stars.gif')
 
@@ -13,7 +14,9 @@ const StartScreen = () => {
     return (
         <View style={styles.container}>
             <ImageBackground style={styles.image} source={image} resizeMode='cover'>
-                <Text style={styles.text}>Hello World!</Text>
+                <MyAppText color="purple">
+                    Hello World!
+                </MyAppText>
             </ImageBackground>
         </View>
     );
@@ -26,14 +29,6 @@ const styles = StyleSheet.create({
     image: {
         flex: 1,
         justifyContent: "center"
-    },
-    text: {
-        color: "white",
-        fontSize: 42,
-        lineHeight: 84,
-        fontWeight: "bold",
-        textAlign: "center",
-        backgroundColor: "#000000c0"
     }
 })
 
