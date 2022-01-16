@@ -189,12 +189,9 @@ android {
 }
 
 dependencies {
-    // Added these for gif support
-
-    // For animated GIF support
+    // Added for gif support
     implementation 'com.facebook.fresco:animated-gif:2.6.0'
-
-    // End added dependencies for gif support
+    // End added dependency
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
