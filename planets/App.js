@@ -1,20 +1,11 @@
 import React from 'react';
-import type { Node } from 'react';
-import {
-  View,
-  Text
-} from 'react-native';
 
-const App: () => Node = () => {
+import StartScreen from './components/screens/StartScreen.js';
+
+const App = () => {
 
   return (
-    <View>
-
-      <Text>Hello World!</Text>
-
-
-
-    </View>
+    <StartScreen />
   );
 };
 
